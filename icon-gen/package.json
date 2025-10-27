@@ -1,0 +1,25 @@
+{
+  "name": "@adrianorsouza/icon-gen",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "build": "node index.mjs"
+  },
+  "author": "Adriano Rosa <info@adrianorosa.com>",
+  "license": "MIT",
+  "description": "Generate React components based on SVG icons",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  },
+  "exports": {
+    "default": "./index.mjs"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "index.mjs"
+  ]
+}
