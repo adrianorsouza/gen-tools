@@ -1,0 +1,13 @@
+{
+  "name": "perf",
+  "version": "1.0.0",
+  "main": "tester.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node tester.js http://127.0.0.1:3000/"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
