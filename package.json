@@ -1,0 +1,19 @@
+{
+  "name": "@adrianorsouza/gen-tools",
+  "version": "1.0.0",
+  "description": "BIN TOOLS =========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adrianorsouza/gen-tools.git"
+  },
+  "author": "Adriano Rosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianorsouza/gen-tools/issues"
+  },
+  "homepage": "https://github.com/adrianorsouza/gen-tools#readme"
+}
