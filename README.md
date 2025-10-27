@@ -11,6 +11,14 @@ Then run:
 
     yarn icongen
 
+# Figma Token 
+
+Export the JSON content of your Token Studio from Figma (legacy format) then store it within your project.
+
+Then run: 
+
+    yarn token-gen
+
 
 ## Author
 

@@ -1,0 +1,19 @@
+{
+  "name": "@adrianorsouza/token-gen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "token": "node build-tokens.mjs"
+  },
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "^0.8.3",
+    "prettier": "2.8.8",
+    "style-dictionary": "^3.8.0"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  }
+}
