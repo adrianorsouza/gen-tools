@@ -58,8 +58,12 @@ async function genReactIconComponent(svgFileSourceCode, iconName) {
       .replace(/fill="#343330"/g, 'fill={defaultColor}')
       .replace(/fill="#C3C3C3"/g, 'fill={defaultColor}')
       .replace(/fill="black"/g, 'fill={defaultColor}')
+      .replace(/stroke="black"/g, 'fill={defaultColor}')
       .replace(/stroke-width/g, 'strokeWidth')
-      .replace(/clip-path/g, 'clipPath');
+      .replace(/clip-path/g, 'clipPath')
+      .replace(/stroke-linecap/g, 'strokeLinecap')
+      .replace(/stroke-linejoin/g, 'strokeLinejoin')
+    ;
 
     const source = TEMPLATE.replace(/{{ICON_CONTENT}}/g, content).replace(/{{ICON_NAME}}/g, iconName);
     const options = await prettier.resolveConfig('.prettierrc');
