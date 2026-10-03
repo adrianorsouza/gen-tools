@@ -86,6 +86,8 @@ function IconGen(options) {
     appendName: 'Icon',
     /** Whether to generate story files*/
     stories: false,
+    /** Whether to avoid build/rebuild this SVG files*/
+    skipSvgFiles: [],
   }
   this.options = { ...defaultOptions, ...options };
   this.data = [];
@@ -99,6 +101,11 @@ function IconGen(options) {
       for (const file of files) {
         if (!file.endsWith('.svg')) {
           console.log(`==> Skipping ${file} ...`);
+          continue;
+        }
+
+        if (this.options.skipSvgFiles.includes(file)) {
+          console.log(`==> Skipping SVG Files: ${file} ...`);
           continue;
         }
 
