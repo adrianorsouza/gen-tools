@@ -84,6 +84,8 @@ function IconGen(options) {
     source: null,
     output: null,
     appendName: 'Icon',
+    /** Whether to generate story files*/
+    stories: false,
   }
   this.options = { ...defaultOptions, ...options };
   this.data = [];
@@ -142,7 +144,9 @@ function IconGen(options) {
         }
 
         await fs.writeFile(distFile, file.content);
-        await fs.writeFile(distStoryFile, file.contentStory);
+        if (this.options.stories) {
+          await fs.writeFile(distStoryFile, file.contentStory);
+        }
         console.log(`Written: ${file.dist}`);
       }
     } catch (err) {
